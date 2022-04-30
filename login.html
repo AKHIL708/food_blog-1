@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+                             /* NAVBAR */
+.navbar{
+    background-color: white;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     text-align: center;
+     box-shadow: 0px 3px 5px gray;
+     height: 70px;
+     z-index: 1;
+     top: 0;
+     position: sticky;
+}
+.img_logo{
+    height: 69px;
+    width: 85px;
+    border-radius: 8px;
+}
+.logo_name{
+    color: rgb(252, 167, 9);
+    font-size: 38px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 2px 3px rgb(240, 189, 95);
+    cursor: pointer;
+}
+
+ul li{
+     list-style-type: none;
+}
+ul li a{
+     text-decoration: none;
+     color: black;
+     margin: 5px;
+}
+ul li a:hover{
+     color:orangered;
+     transition: 0.2s;
+}
+        body{
+             /* background-color: orange; */
+             /* background-image: linear-gradient(black,white); */
+             background-color: white;
+             background-repeat: no-repeat;
+             background-size: cover;
+            
+        }
+
+        .container label input{
+          margin: 5px 50px;
+
+            
+        }
+        .box1{
+    font-size: 30px;
+    color: rgb(252, 167, 9);
+    text-shadow: 2px 2px 3px rgb(240, 189, 95);
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+        }
+        .box2{
+            margin: 35px 35px;
+            color: rgb(252, 167, 9);
+    text-shadow: 2px 2px 3px rgb(240, 189, 95);
+            font-size: 30px;
+             display: flex;
+             justify-content: center;
+             text-align: center;
+             align-items: center;
+        }
+        .box3{
+            font-size: 30px;
+            color: rgb(252, 167, 9);
+    text-shadow: 2px 2px 3px rgb(240, 189, 95);
+             display: flex;
+             justify-content: center;
+             text-align: center;
+             align-items: center;
+        }
+       input{
+           color: black;
+            width: 250px;
+            height: 35px;
+            background-color: transparent ;
+            border-radius: 20px;
+            box-shadow: 2px 2px 5px black;
+       }
+       button
+       {
+           margin-top: 25px;
+       margin-left: 555px; 
+       width: 75px;
+       height: 29px;
+       border-radius: 5px;
+       background-color: white
+       ;
+       }
+    .submitbutton{
+        box-shadow: 2px 2px 4px gray;
+         background-color: orange;
+         color: white;
+         font-size: 18px;
+    }
+    .submitbutton_newstyle{
+        box-shadow: 2px 2px 4px gray;
+        background-color: green;
+        font-size: 18px;
+        color: whitesmoke;
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img class="img_logo" src="logo2.jpg"  title="Welcome" alt="logo">
+        <span class="logo_name">Fruits Adda</span>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                    <a  target="_blank" href="login.html">Login</a>
+                    <a href="#">contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="box1">
+      <h3>Your Name : </h3> <br>
+      <input id="text" type="text" style="color: black; font-size: large ; font-weight: bolder;"> </div>
+      <div class="box2">
+      <h3>E Mail : </h3>
+      <input id="text1" type="mail" style="margin-left: 75px; color: black; font-size: large ; font-weight: bolder "></div>
+      <div class="box3">
+      <h3 >Contact Num:</h3>
+      <input id="text2"  style="color: black; font-size: large ; font-weight: bolder;" type="number"></div>
+
+    </div>
+    <div class="btn">
+        <button onclick="submit()" id="button" class="submitbutton">submit</button>
+    </div>
+
+</body>
+<script>
+    
+  function submit(){
+    let x = document.getElementById("button");
+    if(x.className == "submitbutton"){
+        x.innerHTML = "Done ✓";
+        x.className = "submitbutton_newstyle";
+    }else {
+        x.innerHTML = "submit"
+         x.className = "submitbutton";
+    }
+   document.getElementById("text").innerHTML = " 5 ";
+   document.getElementById("text1").innerHTML = " ";
+   document.getElementById("text2").innerHTML = " ";
+
+}
+
+  
+
+
+</script>
+</html>

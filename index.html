@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+                              <!-- NAVBAR  -->
+
+    <div class="navbar">
+        <img class="img_logo" src="logo2.jpg"  title="Welcome" alt="logo">
+        <span class="logo_name">Fruits Adda</span>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                    <a  href="login.html">Login</a>
+                    <a href="contact.html" >contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+                  <!-- main section  -->
+
+  <div class="container">
+     <input type="text" class="input" >
+     <span><img class="icon" src="icon.png" alt="//"></span>
+    
+    </div>
+                 <!-- main section 2 -->
+
+   <section class="main_section">
+
+       <h1 class="primary_heading"> Main Course</h1>
+
+       <div id="menu">
+       <div class="box">
+         <img src="fruits basket.jpg" alt="food basket">
+         <h2 class="center">Fruit Basket</h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae impedit nihil, error in maxime, voluptatum excepturi tempore quasi nemo inventore tempora perferendis magnam quibusdam iusto vero minus! Ducimus, aliquam?</p>
+       </div>
+
+       <div class="box">
+        <img src="fruit salad.jpg" alt="food basket">
+        <h2 class="center">Fruit Salad</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae impedit nihil, error in maxime, voluptatum excepturi tempore quasi nemo inventore tempora perferendis magnam quibusdam iusto vero minus! Ducimus, aliquam?</p>
+      </div>
+
+      <div class="box">
+        <img src="icecream_fruit.jpg" alt="food basket">
+        <h2 class="center">Fruit Cream</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae impedit nihil, error in maxime, voluptatum excepturi tempore quasi nemo inventore tempora perferendis magnam quibusdam iusto vero minus! Ducimus, aliquam?</p>
+      </div>
+    </div>
+
+   </section>
+
+                 <!-- menu table  -->
+     <div class="table_heading">
+         <h2> MENU </h2>
+     </div>
+
+    <div id="table_menu">
+
+        <table class="table">
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Fruit mix</td>
+                <td>92-/</td>
+                <td><span>  <button onclick="add()" >+</button> <p id="demo" >Qty</p><button onclick="minus()">-</button></span></td>
+            </tr> 
+            <tr>
+                <td>2</td>
+                <td>Fruit cream</td>
+                <td>102-/</td>
+                <td><span>  <button onclick="add()" >+</button>  <p id="demo2">Qty</p> <button onclick="minus()">-</button></span></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Fruit punch</td>
+                <td>122-/</td>
+                <td><span>  <button onclick="add()" >+</button>  <p id="demo3">Qty</p> <button onclick="minus()">-</button></span></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Fruit bucket</td>
+                <td>152-/</td>
+                <td><span>  <button onclick="add()" >+</button>  <p id="demo4">Qty</p> <button onclick="minus()">-</button></span></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Icecream</td>
+                <td>52-/</td>
+                <td><span>  <button onclick="add()" >+</button>  <p id="demo5">Qty</p><button onclick="minus()">-</button></span></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Tutty Fruit</td>
+                <td>192-/</td>
+                <td><span>  <button onclick="add()" >+</button>  <p id="demo6">Qty</p> <button onclick="minus()">-</button></span></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Special fruit</td>
+                <td>222-/</td>
+                <td><span>  <button onclick="add()" >+</button>  <p id="demo7">Qty</p> <button onclick="minus()">-</button></span></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Saver Bucket</td>
+                <td>252-/</td>
+                <td><span>  <button onclick="add()"  >+</button>  <p id="demo8">Qty</p> <button onclick="minus()">-</button></span></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Saver fruit</td>
+                <td>252-/</td>
+                <td><span>  <button onclick="add()" >+</button>  <p id="demo9">Qty</p> <button onclick="minus()">-</button></span></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Saver meal</td>
+                <td>252-/</td>
+                <td><span>  <button onclick="add()" >+</button>  <p id="demo10">Qty</p> <button onclick="minus()">-</button></span></td>
+            </tr>
+            
+            
+                
+            
+        </table>
+
+    </div>
+
+
+           <!-- connection section  -->
+
+  <div id="delivery">
+      <h3 class="delivery_heading">We are also IN.</h3>
+      <div class="deliveryclass">
+      <img class="deliveryapp1" src="swiggy.png" alt="swiggy">
+      <img class="deliveryapp2" src="foodpanda.png" alt="foodpanda">
+      <img class="deliveryapp3" src="zomato.png" alt="zomato">
+      <img class="deliveryapp4" src="ubereats.png" alt="ubereats">
+    </div>
+  </div>
+
+
+  <footer>
+     <div id="footer">
+
+         <h3 class="footerheading">Fruits Adda</h3>
+         <div class="footerclass">
+             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium tenetur recusandae tempora suscipit harum aspernatur dolorem alias deleniti, quidem, illo enim quia eos quo perferendis labore inventore voluptatibus, autem aliquam nulla! Cumque aspernatur fugiat repellendus. Beatae, tenetur? Unde hic commodi, laudantium rem natus dolore praesentium eaque nemo eius iure quidem fugiat dignissimos! Sed mollitia hic modi quidem necessitatibus ipsum unde accusamus quia, incidunt dolore sunt sequi consectetur, harum voluptatem esse blanditiis iusto rerum beatae! Libero, temporibus cum porro reiciendis fuga rerum corporis quae ipsam iusto ipsum ea aliquid vel saepe aperiam, beatae iste debitis id in laboriosam sit explicabo nihil maxime! Unde quo vero libero porro excepturi dignissimos ratione veniam quos delectus voluptas, sequi quibusdam vitae adipisci inventore, atque impedit expedita odio? Ipsam voluptatibus ducimus itaque incidunt hic enim molestiae molestias dignissimos. Incidunt, officiis. Fugiat voluptas maiores ipsam doloribus nostrum voluptatibus et odio architecto impedit totam! Voluptatibus numquam facere nam. 
+         </div>
+
+         <div class="footerclass2">
+             <p>copy right &copy; on Fruits Adda - 1982 </p>
+         </div>
+     </div>
+  </footer>
+
+
+
+
+
+</body>
+<script src="index.js"></script>
+</html>
